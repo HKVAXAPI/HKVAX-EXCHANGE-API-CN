@@ -11,7 +11,9 @@
 
 ## 接入URLs
 
-[https://api.trade.hkvax.com/v1](https://api.trade.hkvax.com/v1)
+Trade: [https://api.trade.hkvax.com/v1](https://api.trade.hkvax.com/v1)
+
+Sim-trade: [https://api.simtrade.hkvax.com/v1 ](https://api.simtrade.hkvax.com/v1 )
 
 ## 请求格式
 
@@ -193,7 +195,6 @@ KsxKzaDdcoufq8Nz3xHV0rz1t4ewswZNKrY3Utv3ltR/xcMztm0LUDcGo9B1YTz8lilzLIlknj/VcFsY
 | BCHABC/USD | 4            | 2            | 2            |
 | LTC/USD    | 4            | 2            | 2            |
 | XRP/USD    | 4            | 6            | 6            |
-| USDT/USD   | 4            | 4            | 2            |
 
 ## 响应参数错误码
 
