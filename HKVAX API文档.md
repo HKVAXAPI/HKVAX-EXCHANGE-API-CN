@@ -52,13 +52,7 @@ HKVAX的服务器在香港。
 
 此外，一旦您完成注册，我们会提供充足的模拟资金供您测试。
 
-### 模拟环境地址
-
-在测试API连接性时，请确保使用以下URL:
-
 **网站**: [https://simtrade.hkvax.com](https://simtrade.hkvax.com/)
-
-**REST API**: https://api.simtrade.hkvax.com/v1 
 
 
 
@@ -75,7 +69,9 @@ HKVAX的服务器在香港。
 
 ## 接入URLs
 
-[https://api.trade.hkvax.com/v1](https://api.trade.hkvax.com/v1)
+**Trade**: [https://api.trade.hkvax.com/v1](https://api.trade.hkvax.com/v1)
+
+**Sim-trade**: https://api.simtrade.hkvax.com/v1 
 
 ## 请求格式
 
