@@ -256,7 +256,6 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 | BCHABC/USD | 4            | 2            | 2            |
 | LTC/USD    | 4            | 2            | 2            |
 | XRP/USD    | 4            | 6            | 6            |
-| USDT/USD   | 4            | 4            | 2            |
 
 ## 响应参数错误码
 
