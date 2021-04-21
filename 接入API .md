@@ -34,7 +34,7 @@ Sim-trade: [https://api.simtrade.hkvax.com/v1 ](https://api.simtrade.hkvax.com/v
 | DEVICEID     | string | true     | 随机字符串(可固定一值)                 |
 | DEVICESOURCE | string | true     | 固定值web                              |
 | Lang         | string | true     | zh-CN或en-US                           |
-| Client       | string | true     | 固定值，由cex分配                      |
+| Client       | string | true     | 用户自定义名字或自定义ID，应为固定值                      |
 
 **requestbody**
 
