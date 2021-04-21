@@ -88,7 +88,7 @@ HKVAX采用maker-taker收费规则，为鼓励挂单，maker挂单成交的手�
 | DEVICEID     | string | true     | 随机字符串(可固定一值)                 |
 | DEVICESOURCE | string | true     | 固定值web                              |
 | Lang         | string | true     | zh-CN或en-US                           |
-| Client       | string | true     | 固定值，由cex分配                      |
+| Client       | string | true     | 用户自定义名字或自定义ID，应为固定值      |
 
 **requestbody**
 
