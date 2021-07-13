@@ -280,7 +280,7 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 
 | 接口分组     | 包含接口                                                     |
 | ------------ | ------------------------------------------------------------ |
-| 行情数据     | 24小时行情(POST /quotation/quotation/query/symbolQuotationGroupBy)<br />深度数据 ( POST /quotation/quotation/query/depthData) <br />K线 (POST /quotation/kline/get/quotationHistory)<br />最新成交记录（POST /quotation/quotation/query/latestTradeQuotation)<br />订单簿数据(POST /quotation/order/query/orderBook)<br />查询最新的成交单信息(POST /quotation/order/query/dealList)<br />查询最优买卖(POST /quotation/order/query/marketBestPrice) |
+| 行情数据     | 24小时行情(POST /quotation/quotation/quotation/query/symbolQuotationGroupBy)<br />深度数据 ( POST /quotation/quotation/quotation/query/depthData) <br />K线 (POST /quotation/quotation/kline/get/quotationHistory)<br />最新成交记录（POST /quotation/quotation/quotation/query/latestTradeQuotation)<br />订单簿数据(POST /quotation/quotation/order/query/orderBook)<br />查询最新的成交单信息(POST /quotation/quotation/order/query/dealList)<br />查询最优买卖(POST /quotation/quotation/order/query/marketBestPrice) |
 | 交易         | 下单(POST /order/cex/user/order/create)<br />撤单(POST /order/cex/user/order/cancel) |
 | 个人数据查询 | 查询指定账户余额(POST /user/cex/user/asset/query/currencyAsset)<br/>查询业务委托订单(POST /user/cex/user/order/query/orderList)<br/>查询订单明细(POST /user/cex/user/mm/query/orderDetail)<br/>查询成交单信息(POST /user/cex/user/order/query/dealOrderList)<br/>查询成交明细(POST /user/cex/user/order/query/dealDetail) |
 
@@ -294,7 +294,7 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 
 **HTTP调用**
 
-> POST /quotation/quotation/query/symbolQuotationGroupBy
+> POST /quotation/quotation/quotation/query/symbolQuotationGroupBy
 
 **请求参数**
 
@@ -310,7 +310,7 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 
 **curl调用示例**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/query/symbolQuotationGroupBy](https://api.trade.hkvax.com/v1/quotation/quotation/query/symbolQuotationGroupBy)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\"}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/symbolQuotationGroupBy](https://api.trade.hkvax.com/v1/quotation/quotation/query/symbolQuotationGroupBy)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\"}"
 
 **响应参数**
 
@@ -383,7 +383,7 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 
 **HTTP调用**
 
-> POST /quotation/quotation/query/depthData
+> POST /quotation/quotation/quotation/query/depthData
 
 **请求参数**
 
@@ -404,7 +404,7 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 
 **curl调用示例**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/query/depthData](https://api.trade.hkvax.com/v1/quotation/quotation/query/depthData)" -H "accept: \*/*" -H "SIGNATURE:   your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/depthData](https://api.trade.hkvax.com/v1/quotation/quotation/query/depthData)" -H "accept: \*/*" -H "SIGNATURE:   your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
 
 **响应参数**
 
@@ -460,7 +460,7 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 
 **HTTP调用**
 
-> POST /quotation/kline/get/quotationHistory
+> POST /quotation/quotation/kline/get/quotationHistory
 
 **请求参数**
 
@@ -487,7 +487,7 @@ pageRows | 当前行数 | int | 分页大小(最大1000)
 
 **curl调用示例**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/kline/get/quotationHistory](https://api.trade.hkvax.com/v1/quotation/kline/get/quotationHistory)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\", \\"startTime\\" : 1569405600000, \\"endTime\\" : 1569407400000, \\"range\\" : 300000}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/kline/get/quotationHistory](https://api.trade.hkvax.com/v1/quotation/kline/get/quotationHistory)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\", \\"startTime\\" : 1569405600000, \\"endTime\\" : 1569407400000, \\"range\\" : 300000}}"
 
 **响应参数**
 
@@ -534,7 +534,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **HTTP调用**
 
-> POST /quotation/quotation/query/latestTradeQuotation
+> POST /quotation/quotation/quotation/query/latestTradeQuotation
 
 **请求参数**
 
@@ -555,7 +555,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **curl调用示例**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/query/latestTradeQuotation](https://api.trade.hkvax.com/v1/quotation/quotation/query/latestTradeQuotation)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/latestTradeQuotation](https://api.trade.hkvax.com/v1/quotation/quotation/query/latestTradeQuotation)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
 
 **响应参数**
 
@@ -591,7 +591,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **HTTP调用**
 
-> POST /quotation/order/query/orderBook
+> POST /quotation/quotation/order/query/orderBook
 
 **请求参数**
 
@@ -602,7 +602,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **curl调用示例**
 
-> curl -X POST "https://api.trade.hkvax.com/v1/quotation/order/query/orderBook" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\", \\"depthStep\\":\\"0000001\\"}}"
+> curl -X POST "https://api.trade.hkvax.com/v1/quotation/quotation/order/query/orderBook" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\", \\"depthStep\\":\\"0000001\\"}}"
 
 **响应参数**
 
@@ -662,7 +662,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **HTTP调用**
 
-> POST /quotation/order/query/dealList
+> POST /quotation/quotation/order/query/dealList
 
 **请求参数**
 
@@ -672,7 +672,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **curl调用示例**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/order/query/dealList](https://api.trade.hkvax.com/v1/quotation/order/query/dealList)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/order/query/dealList](https://api.trade.hkvax.com/v1/quotation/order/query/dealList)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
 
 **响应参数**
 
@@ -717,7 +717,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **HTTP调用**
 
-> POST /quotation/order/query/marketBestPrice
+> POST /quotation/quotation/order/query/marketBestPrice
 
 **请求参数**
 
@@ -728,7 +728,7 @@ data下是个字段为quotationHistory的jsonArray,内部详细字段如下:
 
 **curl调用示例**
 
-> curl -X POST "https://api.trade.hkvax.com/v1/quotation/order/query/marketBestPrice" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\",\\"action\\":\\"BUY\\"}}"
+> curl -X POST "https://api.trade.hkvax.com/v1/quotation/quotation/order/query/marketBestPrice" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\",\\"action\\":\\"BUY\\"}}"
 
 **响应参数**
 
