@@ -227,6 +227,6 @@ KsxKzaDdcoufq8Nz3xHV0rz1t4ewswZNKrY3Utv3ltR/xcMztm0LUDcGo9B1YTz8lilzLIlknj/VcFsY
 
 | 接口分组     | 包含接口                                                     |
 | ------------ | ------------------------------------------------------------ |
-| 行情数据     | 24小时行情(POST /quotation/quotation/query/symbolQuotationGroupBy)<br />深度数据 ( POST /quotation/quotation/query/depthData) <br />K线 (POST /quotation/kline/get/quotationHistory)<br />最新成交记录（POST /quotation/quotation/query/latestTradeQuotation)<br />订单簿数据(POST /quotation/order/query/orderBook)<br />查询最新的成交单信息(POST /quotation/order/query/dealList)<br />查询最优买卖(POST /quotation/order/query/marketBestPrice) |
+| 行情数据     | 24小时行情(POST /quotation/quotation/quotation/query/symbolQuotationGroupBy)<br />深度数据 ( POST /quotation/quotation/quotation/query/depthData) <br />K线 (POST /quotation/quotation/kline/get/quotationHistory)<br />最新成交记录（POST  /quotation/quotation/quotation/query/latestTradeQuotation)<br />订单簿数据(POST /quotation/quotation/order/query/orderBook)<br />查询最新的成交单信息(POST /quotation/quotation/order/query/dealList)<br />查询最优买卖(POST  /quotation/quotation/order/query/marketBestPrice) |
 | 交易         | 下单(POST /order/cex/user/order/create)<br />撤单(POST /order/cex/user/order/cancel) |
 | 个人数据查询 | 查询指定账户余额(POST /user/cex/user/asset/query/currencyAsset)<br/>查询业务委托订单(POST /user/cex/user/order/query/orderList)<br/>查询订单明细(POST /user/cex/user/mm/query/orderDetail)<br/>查询成交单信息(POST /user/cex/user/order/query/dealOrderList)<br/>查询成交明细(POST /user/cex/user/order/query/dealDetail) |
